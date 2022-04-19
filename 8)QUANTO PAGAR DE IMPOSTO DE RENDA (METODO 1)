@@ -1,0 +1,25 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String args[]) {
+	    double x = 0;
+	    Scanner sc = new Scanner(System.in);
+	    System.out.println("digite o salário");
+	    x = sc.nextDouble();
+	    System.out.println("vc digitou " + x);
+	    sc.close();
+	    if (x <= 2000.00) {
+	        System.out.println( x + " esta isento");
+	    }
+	    else if ( x >= 2000.01 && x <= 3000.00 ){
+            System.out.println( "o imposto será de R$ " + (x - 2000.00) * 0.08 );
+	    }
+	    else if ( x >= 3000.01 && x <= 4500.00 ){
+            System.out.println("o imposto será de R$ " + (((x - 3000.00) * 0.18) + (1000.00 * 0.08)) );
+	    }    
+	    else if ( x > 4500.00){
+            System.out.println("o imposto será de R$ " + (((1500) * 0.18) + ((x - 4500.00) * 0.28 ) + (1000.00 * 0.08)) );
+	    }    
+        
+	}
+}
