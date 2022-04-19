@@ -1,0 +1,20 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String args[]) {
+	    int x = 0;
+	    int y = 0;
+	    Scanner sc = new Scanner(System.in);
+	    System.out.println("digite dois numeros ");
+	    x = sc.nextInt();
+	    y = sc.nextInt();
+	    System.out.println("vc digitou " + x + " e " + y);
+	    sc.close();
+	    if (x % y == 0 || y % x == 0 ){
+            System.out.println(x + " é multiplo");
+	    }
+        else{ 
+            System.out.println(x + " não è multiplo de " + y);
+        }
+	}
+}
