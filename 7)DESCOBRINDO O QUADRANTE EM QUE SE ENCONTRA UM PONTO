@@ -1,0 +1,36 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String args[]) {
+	    int x = 0;
+	    int y = 0;
+	    Scanner sc = new Scanner(System.in);
+	    System.out.println("digite dois numeros");
+	    x = sc.nextInt();
+	    y = sc.nextInt();
+	    System.out.println("vc digitou " + x + " e " + y);
+	    sc.close();
+	    if (x == 0 && y == 0) {
+	        System.out.println( " o ponto está na origem");
+	    }
+	    else if (x == 0.0) {
+			System.out.println("o ponto está no Eixo Y");
+		}
+		else if (y == 0.0) {
+			System.out.println("o ponto está no Eixo X");
+		}
+	    else if (x > 0 && y > 0) {
+	        System.out.println( " o ponto esta no primeiro quadrantes");
+	    }
+	    else if ( x < 0 && y > 0){
+            System.out.println( " o ponto  esta no segundo quadrante");
+	    }    
+	    else if ( x <0 && y < 0 ){
+            System.out.println( " o ponto esta no terceiro quadrante");
+	    }    
+	    else if ( x > 0 && y < 0 ){
+            System.out.println(" o ponto esta no quarto quadrante");
+	    }    
+         
+	}
+}
