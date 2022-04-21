@@ -1,0 +1,17 @@
+import java.util.Scanner;
+public class Main{
+	public static void main(String args[]) {
+	    int senha = 0;
+	    Scanner sc = new Scanner(System.in);
+	    System.out.println("digite a senha");
+	    senha = sc.nextInt();
+	    System.out.println("vc digitou " + senha);
+	    sc.close();
+	    if (senha == 2002 ){
+            System.out.println(" acesso permitido ");
+	    }
+        else{
+            System.out.println( "senha invalida" );
+        }     
+	}
+}
