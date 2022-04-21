@@ -1,0 +1,36 @@
+import java.util.Scanner;
+public class Main
+{
+    public static void main(String args[]){
+        int x = 0 ;
+        int alcool = 0;
+        int gasolina = 0;
+        int diesel = 0;
+        int total = 0;
+        Scanner sc = new Scanner(System.in);
+        while (true){
+            System.out.println("qual combustivel deseja? 1 = alcol, 2 = gasolina, 3 = diesel");
+            x = sc.nextInt();
+            if (x == 1){
+                System.out.println("alcool");
+                alcool++;
+            } 
+            else if (x == 2){
+                System.out.println("gasolina");
+                gasolina++;
+            }
+            else if (x == 3){
+                System.out.println("diesel");
+                diesel++;
+            }
+            else if(x<= 0 || x> 3){
+                System.out.println("MUITO OBRIGADO");
+                total = alcool + gasolina + diesel;
+                break;
+            }
+        } 
+        System.out.println( "o total de alcool foi " + alcool);
+        System.out.println( "o total de gasolina foi " + gasolina);
+        System.out.println( "o total de diesel foi " + diesel);
+    }       
+}
