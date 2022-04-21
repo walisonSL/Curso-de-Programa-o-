@@ -1,0 +1,51 @@
+//calculadora java
+import java.util.Scanner;
+public class Main
+{
+    public static void main(String args[]){
+        double soma = 0;
+        double subtração  = 0;
+        double divisão = 0;
+        double multiplicação = 0;
+        double operação = 0;
+        double num1 = 0;
+        double num2 = 0;
+        Scanner sc = new Scanner(System.in);
+        while ( true ){
+            System.out.println("escolha a operação 1 = soma, 2 = subtração, 3 = divisão, 4 = multiplicação");
+            operação = sc.nextDouble();
+            if ( operação == 1){
+                System.out.println("operação de soma, escolha os numeros");
+                num1 = sc.nextDouble();
+                num2 = sc.nextDouble();
+                soma = num1 + num2;
+                System.out.println("a soma é " + soma );
+            }    
+            else if ( operação == 2){
+                System.out.println("operação de subtração, escolha os numeros");
+                num1 = sc.nextDouble();
+                num2 = sc.nextDouble();
+                subtração = num1 - num2;
+                System.out.println("a subtração é " + subtração );
+            }    
+            else if (operação == 3){
+                System.out.println("operação de divisão, escolha os numeros");
+                num1 = sc.nextDouble();
+                num2 = sc.nextDouble();
+                divisão = num1 / num2;
+                System.out.println("a divisão é " + divisão );
+            }
+            else if (operação == 4){
+                System.out.println("operação de multiplicação, escolha os numeros");
+                num1 = sc.nextDouble();
+                num2 = sc.nextDouble();
+                multiplicação = num1 * num2;
+                System.out.println("a multiplicação é " + multiplicação );
+            }
+            else if (operação <= 0 || operação > 4){
+                break;
+            }
+        } 
+        
+    }
+}
