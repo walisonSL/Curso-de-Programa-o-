@@ -1,0 +1,16 @@
+//Atividade, fazer um programa para ler um número inteiro n. o programa deve então mostrar na tela n linhas, começando de 1 até n. para cada linha, mostrar o número da linha, depois o quadrado e o cubo do valor.
+import java.util.Scanner;
+public class Main{
+	public static void main(String[] args){
+	    System.out.println("digite um numero");
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+		
+		for (int i=1; i<=n; i++) {
+		int quadadro = i*i;
+		int cubo = i*i*i;
+		System.out.println("linha " + i +", " + "quadrado = " + quadadro + ", " + "cubo = " + cubo );
+		}
+		sc.close();
+	}
+}
